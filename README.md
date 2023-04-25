@@ -38,9 +38,9 @@ Inside Test you need to type JS code
 
 Click on
 
-**→ to verify status code**
+**→ to verify status code**.
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/61a8b0b5-a0d9-4b81-8ead-d4b2fae23f3b/image12.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/61a8b0b5-a0d9-4b81-8ead-d4b2fae23f3b/image12.png)
+![image12](https://user-images.githubusercontent.com/69331074/234321003-f252c99a-fdd1-40b9-89c4-47dc1d6e9b74.png)
 
 Just need to change that 200 inside the () then your code will test other Status code
 
@@ -48,49 +48,56 @@ Then run gonna see under Test Results shows pass
 
 → to verify headers
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4cf88b18-9abd-4628-ae3a-d990186705b6/image9.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4cf88b18-9abd-4628-ae3a-d990186705b6/image9.png)
+![image9](https://user-images.githubusercontent.com/69331074/234322247-ced54f76-d28e-48c6-bcdd-bc0f79468267.png)
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3ce5915c-5ddd-4e08-821a-800459ac3218/image32.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3ce5915c-5ddd-4e08-821a-800459ac3218/image32.png)
+![image32](https://user-images.githubusercontent.com/69331074/234322324-1f4f96dd-40a3-4971-8fa2-090264314f36.png)
 
 → if you want to verify for example Date is present in the header just need to copy and past same code and change instead “Content-type” chenge to “Date” then click Send
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/35253a18-1d00-4763-99fc-d61740f15775/image21.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/35253a18-1d00-4763-99fc-d61740f15775/image21.png)
+![image21](https://user-images.githubusercontent.com/69331074/234322355-0139d682-70db-4e20-900a-aaf2f11e4d1f.png)
 
 Is not case sensitive instead Date you can type date
 
 Now want to verify content type is application/json now in second line after “Content-Type” add comma and type “applicaiton/json”
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/30f33052-f089-44b4-8d76-25b47544940f/image5.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/30f33052-f089-44b4-8d76-25b47544940f/image5.png)
+![image5](https://user-images.githubusercontent.com/69331074/234322387-a4f12151-8ae9-4eb3-8cbf-c4ddb85d34a4.png)
 
 Another thing want to check header Transfer-Encdoing is chunked:
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/28d0ca90-d758-4124-a7ac-59d5c3a95889/image18.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/28d0ca90-d758-4124-a7ac-59d5c3a95889/image18.png)
+![image18](https://user-images.githubusercontent.com/69331074/234322516-7c0d4982-dfd1-4d63-a061-ea54e06cdc81.png)
+
 
 Under Spartans right click create POST {{sUrl}}/api/spartans
 
 Under body Choose jason Then add value then send get 201 Status code
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/37529758-4e0c-4fcb-a9cc-e0eb1a118fa1/image24.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/37529758-4e0c-4fcb-a9cc-e0eb1a118fa1/image24.png)
+![image24](https://user-images.githubusercontent.com/69331074/234322543-ebf2c659-0742-45b4-b062-2ad49b66f7e2.png)
+
 
 Now go to **Test** tab
 
 Check status code
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/bc68abfe-4e38-4115-9fa6-20411af4ab3d/image8.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/bc68abfe-4e38-4115-9fa6-20411af4ab3d/image8.png)
+![image8](https://user-images.githubusercontent.com/69331074/234322584-d5da10cd-7bed-4f34-b5f0-a03b0c1d27d6.png)
+ng)
 
 Now from right click on Respond body: Json value check
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/256c1d16-16ec-4dd1-9852-e7c5155662da/image6.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/256c1d16-16ec-4dd1-9852-e7c5155662da/image6.png)
+![image6](https://user-images.githubusercontent.com/69331074/234322609-584fb0ce-caf9-4ed0-a182-3557b42af808.png)
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3d50469b-1455-4295-8e21-79e8ed2c1f93/image27.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3d50469b-1455-4295-8e21-79e8ed2c1f93/image27.png)
+
+![image27](https://user-images.githubusercontent.com/69331074/234322626-0b9e8bce-b900-42df-9a59-00411be78266.png)
+
 
 Now need to change in third line **value** to **success** and **100** to **“A Spartan is Born!”**
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d6ff0db4-8e00-457d-bcda-7d4a53df1fe1/image13.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d6ff0db4-8e00-457d-bcda-7d4a53df1fe1/image13.png)
+![image13](https://user-images.githubusercontent.com/69331074/234322656-e0f7c054-5da7-4355-a39e-aafdc8bc0983.png)
+
 
 If want to get a name just copy and past same code then change it like this
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b8b5bb6b-c249-46ea-9a96-79abcfb4d15c/image31.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b8b5bb6b-c249-46ea-9a96-79abcfb4d15c/image31.png)
+![image31](https://user-images.githubusercontent.com/69331074/234322693-6a90b676-bace-4bb7-81b0-9e6866c64cbe.png)
+
 
 **Create Json object:**
 
@@ -100,11 +107,13 @@ Var jsonData = pm.response.json();
 
 console.log(“Spartan name: “ +jsonData.data.name);
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/bed43901-6de3-489a-975e-c7f9108c9e00/image25.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/bed43901-6de3-489a-975e-c7f9108c9e00/image25.png)
+![image25](https://user-images.githubusercontent.com/69331074/234322713-a59e1574-9daf-47e9-bd2c-c9e70e3e334c.png)
+
 
 And this is a out put:
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3d711b45-e86b-4670-be09-1d057e8b32fe/image17.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3d711b45-e86b-4670-be09-1d057e8b32fe/image17.png)
+![image17](https://user-images.githubusercontent.com/69331074/234322751-6f0a3b95-e352-4d55-9577-b25d6639c033.png)
+
 
 Click on Spartan Colloction right click and create new request : PUT /{{sUrl}}/api/spartans/:id
 
@@ -114,35 +123,42 @@ Now click on Test
 
 Click on status code and change it 204
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5893d9bb-6c6e-4b9d-aa09-a0ca06a9e52f/image4.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5893d9bb-6c6e-4b9d-aa09-a0ca06a9e52f/image4.png)
+![image4](https://user-images.githubusercontent.com/69331074/234322777-a3a0d2b1-2e21-4125-91f2-c705bda0b31d.png)
+
 
 At this point we need to capture the id from POST request
 
 We going back on our POST request and on Test tab need to save our jsondata into global variable
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0a05e0df-ee72-47ef-9fd7-57719aca5ea7/image28.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0a05e0df-ee72-47ef-9fd7-57719aca5ea7/image28.png)
+![image28](https://user-images.githubusercontent.com/69331074/234322880-64993d78-8465-42fd-bf98-60c5f68ab7d0.png)
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d6defecb-66ac-47d9-9718-34b6f32b9de5/image16.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d6defecb-66ac-47d9-9718-34b6f32b9de5/image16.png)
+
+![image16](https://user-images.githubusercontent.com/69331074/234322900-7a2e9f72-910a-499d-9888-e41b1a4902ad.png)
+
 
 On the right side click on
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/77e0077a-8e03-4054-ae4f-110b47a82678/image34.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/77e0077a-8e03-4054-ae4f-110b47a82678/image34.png)
+![image34](https://user-images.githubusercontent.com/69331074/234322924-2fc04968-1aeb-4503-9439-03ab04e859f8.png)
+
 
 Then save it
 
 Now we go PUT request and add id with value {{SPARTAN_ID}}
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d84b484a-a490-4427-aa7e-5b86ba4161fe/image3.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d84b484a-a490-4427-aa7e-5b86ba4161fe/image3.png)
+![image3](https://user-images.githubusercontent.com/69331074/234326928-d34b8a6b-37b4-4ca9-a262-36a6f1ee4d6a.png)
+
 
 Now want to create DELET /{{sUrl}}/api/spartans/:id
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1f8b3cc0-bdbf-4900-a838-4a65eb51daf0/image23.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1f8b3cc0-bdbf-4900-a838-4a65eb51daf0/image23.png)
+![image23](https://user-images.githubusercontent.com/69331074/234322961-2c5d0917-0f81-4b3e-b3d5-079f165adc62.png)
+
 
 Create GET / {{sUrl}}/api/ Spartans/:id to check that id does not exist
 
 On Test tab check the status code and error massage
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a8a25416-97b7-40e9-9c92-fcd157922fde/image11.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a8a25416-97b7-40e9-9c92-fcd157922fde/image11.png)
+![image11](https://user-images.githubusercontent.com/69331074/234323035-d11121a0-d802-4569-8cf9-93bd68dc04d6.png)
+
 
 We are using static **post spartan name** right now. We want to **get dynamic name** to **post** and **verify** that **name is posted.**
 
@@ -162,9 +178,11 @@ var name = pm.variables.replaceIn('{{$randomFirstName}}');
 
 pm.globals.set("SPARTAN_NAME", name);
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5c33c7fa-b14a-49e2-91bf-d7cdd8cd944f/image33.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5c33c7fa-b14a-49e2-91bf-d7cdd8cd944f/image33.png)
+![image33](https://user-images.githubusercontent.com/69331074/234323124-df3c6a0f-737c-453e-b6cf-59825669a799.png)
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/60114900-66b7-4b9e-a3df-66c8a1558aed/image29.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/60114900-66b7-4b9e-a3df-66c8a1558aed/image29.png)
+
+![image29](https://user-images.githubusercontent.com/69331074/234323590-14de02b4-2b61-4fb6-a51e-a8ebaf4d6cce.png)
+
 
 ## **FLOW—>**
 
@@ -176,15 +194,18 @@ Then API Response
 
 Last Test
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/214aa104-2eb2-4c0b-ab9d-87b3ff153df9/image26.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/214aa104-2eb2-4c0b-ab9d-87b3ff153df9/image26.png)
+![image26](https://user-images.githubusercontent.com/69331074/234323614-fdf63b30-3146-4487-9fa8-3160f1eeed75.png)
+
 
 Set global name
 
 Then after request and response complete, under Test tab, we read the Global variable SPARTAN_NAME and assign as an expectedName
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f16f42d6-4d36-4fca-8b3c-c6ab46b68c6a/image2.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f16f42d6-4d36-4fca-8b3c-c6ab46b68c6a/image2.png)
+![image2](https://user-images.githubusercontent.com/69331074/234323638-3c937d2b-0965-4500-b928-5a43461bff5c.png)
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3c9626a2-fce6-4099-b9bf-47396ae669bc/image30.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3c9626a2-fce6-4099-b9bf-47396ae669bc/image30.png)
+
+![image30](https://user-images.githubusercontent.com/69331074/234323670-fdd7c3f0-5470-4679-bdcb-ef1c24f5831a.png)
+
 
 ## RUN Collection
 
@@ -232,15 +253,18 @@ Then our **POST REQUEST BODY** we use **those field names** with **{{}}**
 
 Under **Test** tab **remove** global name
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d320f653-9bc9-41eb-af5c-acbc3f8a1be2/image15.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d320f653-9bc9-41eb-af5c-acbc3f8a1be2/image15.png)
+![image15](https://user-images.githubusercontent.com/69331074/234323694-d19e3ce2-cb87-4f21-a401-11a91523ab1b.png)
+
 
 Now need to add expectedName like this:
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d2de7061-1359-4360-acfb-7f7f5e4648d6/image1.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d2de7061-1359-4360-acfb-7f7f5e4648d6/image1.png)
+![image1](https://user-images.githubusercontent.com/69331074/234323723-491d00ed-8217-4a49-9d22-8a49498e1d08.png)
+
 
 You can remove the log part too(print json response and print something on the console)
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/318c3a53-58cd-4f24-a322-51677f99ee34/image36.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/318c3a53-58cd-4f24-a322-51677f99ee34/image36.png)
+![image36](https://user-images.githubusercontent.com/69331074/234323742-9f8fef48-1d3f-4a0e-998d-4c1e0f624042.png)
+
 
 Keep the ID!
 
@@ -304,13 +328,15 @@ Next from top right where said no environment pick **QA1 now** when you try do y
 
 **Password is {{leader_password}}**
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e414b4d2-10ac-4aea-a750-d81968ce33f4/image7.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e414b4d2-10ac-4aea-a750-d81968ce33f4/image7.png)
+![image7](https://user-images.githubusercontent.com/69331074/234323773-e28619b1-7d92-4fa1-a6fa-5dde800549c6.png)
+
 
 If right now just change the QA1 to QA2 and send it again you gonna get a new token from Enviroment QA2
 
 In **Test** tab want to check **status code** and **get a token** and save as an leader Token env variable.
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/dd060a14-f9e1-434e-b454-2a0e5e8b928b/image10.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/dd060a14-f9e1-434e-b454-2a0e5e8b928b/image10.png)
+![image10](https://user-images.githubusercontent.com/69331074/234323797-d86b3f2b-5d7d-401a-b6ce-42ba701e5b04.png)
+
 
 From right side click on status code and click on Respond body : Json value check
 
@@ -326,7 +352,8 @@ Then we delete first line and third line and only keep the
 
 **After we print Token I need to add it in to my Enviroment Variable**
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9eef41b8-0603-447e-8375-4a51efc0e72e/image22.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9eef41b8-0603-447e-8375-4a51efc0e72e/image22.png)
+![image22](https://user-images.githubusercontent.com/69331074/234323819-06837e75-7f62-4776-94ae-b95b1e0eb1a2.png)
+
 
 click on Set an envriment variable
 
@@ -342,7 +369,8 @@ Then right click on Bookit and create another request
 
 **Click on Authorization and Token → type → {{leaderToke}}**
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6d919c83-ea6f-41de-976f-aeb39480721a/image20.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6d919c83-ea6f-41de-976f-aeb39480721a/image20.png)
+![image20](https://user-images.githubusercontent.com/69331074/234323845-0d14c44d-efa1-4954-9024-447614bddc78.png)
+
 
 ## **DDT** with **schedule** **after click** on **Run collection** from **Spartan collection**
 
@@ -352,7 +380,8 @@ On there
 
 give **name** like **SMOKE TEST EVERY DAY** at **8:00AM** and can choose **Environment** like **QA1** and Click **Schudel Run**
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d1cbb0e1-1bd0-4918-94b8-445ffd801a2e/image38.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d1cbb0e1-1bd0-4918-94b8-445ffd801a2e/image38.png)
+![image38](https://user-images.githubusercontent.com/69331074/234323868-2a56c7c8-358a-4803-9bfe-b4536145bce2.png)
+
 
 Another way to run the collection is choose by Automate runs **via CLI**
 
@@ -370,7 +399,8 @@ then with command line deponds on your operation system and how is work by type 
 
 **[https://learning.postman.com/docs/collections/using-newman-cli/integration-with-jenkins/](https://learning.postman.com/docs/collections/using-newman-cli/integration-with-jenkins/)**
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e5ecfeff-ab02-422b-83ae-36cf41a20945/image37.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e5ecfeff-ab02-422b-83ae-36cf41a20945/image37.png)
+![image37](https://user-images.githubusercontent.com/69331074/234323956-2396bca1-442e-4595-9728-9c25a432fa62.png)
+
 
 **Now want to do Schema**
 
@@ -380,7 +410,8 @@ then with command line deponds on your operation system and how is work by type 
 
 **Var Schema = {add your schema all json objects here};**
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5b6fe50f-7f20-48fb-a2a0-34f02f4ca793/image19.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5b6fe50f-7f20-48fb-a2a0-34f02f4ca793/image19.png)
+![image19](https://user-images.githubusercontent.com/69331074/234323981-8dd9cd77-b6c4-4796-8516-2f80cbcf0445.png)
+
 
 After that type:
 
@@ -390,7 +421,8 @@ After that type:
 
 **console.log(tv4.error);**
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/087c05e4-5a52-43ca-b954-81a4734b2fc0/image14.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/087c05e4-5a52-43ca-b954-81a4734b2fc0/image14.png)
+![image14](https://user-images.githubusercontent.com/69331074/234324002-6e6ddbc0-ddcd-4cb0-8814-5fe3a4c6985e.png)
+
 
 **Then Send should get 200 Status code**
 
