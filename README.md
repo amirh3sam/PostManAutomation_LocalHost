@@ -5,7 +5,7 @@
 
 **1- create workspace**
 
-then name it : MyAutomationWorkSpace  
+<span style="color: green"> Some green text </span>then name it : MyAutomationWorkSpace  
 --
 **Test Tab →** verify response
 
