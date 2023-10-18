@@ -288,7 +288,7 @@ And name it **QA1**
 
 **Now we have to define different Enviroments start with :**
 
-**instead XXXXXXXXXX you add your actual informaion in Project**
+**--------------------instead XXXXXXXXXX you add your actual informaion in Project------------------**
 
 **baseUrl** type it under VARIABLE and add XXXXXXXXXX under **CURRENT VALUE**
 
