@@ -1,7 +1,7 @@
 ## PostMan Automation
 
 **PostMan Automation**
-```css
+```html
 
 **1- create workspace**
 
