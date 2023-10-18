@@ -288,17 +288,19 @@ And name it **QA1**
 
 **Now we have to define different Enviroments start with :**
 
-**baseUrl** type it under VARIABLE and add [https://api.qa.bookit.cydeo.com](https://api.qa.bookit.cydeo.com/) under **CURRENT VALUE**
+**instead XXXXXXXXXX you add your actual informaion in Project**
 
-Next **VARIABLE** is **tearcher_email** and the **CURRENT VALUE** is **[blyst6@si.edu](mailto:blyst6@si.edu)**
+**baseUrl** type it under VARIABLE and add XXXXXXXXXX under **CURRENT VALUE**
 
-**teacher_password** is **barbabaslyst**
+Next **VARIABLE** is **tearcher_email** and the **CURRENT VALUE** is **XXXXXXXXXX**
+
+**teacher_password** is **XXXXXXXXXX**
 
 **If you want to password invisible change type to secret**
 
 **Next**
 
-**leader_email is lfinnisz@yolasite.com and leader_passeword is lissiefinnis**
+**leader_email is XXXXXXXXXX and leader_passeword is XXXXXXXXXX**
 
 **Then right click on QA1 and choose Duplicate**
 
@@ -306,17 +308,17 @@ Next **VARIABLE** is **tearcher_email** and the **CURRENT VALUE** is **[blyst6@s
 
 **Now we change only the values**
 
-**baseUrl** is [https://api.qa2.bookit.cydeo.com](https://api.qa.bookit.cydeo.com/)
+**baseUrl** is XXXXXXXXXXX**
 
-**tearcher_email** is **teacherilsamnickel@gmail.com**
+**tearcher_email** is **XXXXXXXXXX**
 
-**teacher_password** is **samnickel**
+**teacher_password** is **XXXXXXXXXX**
 
-**teader_email** is **daldie7l@seattletimes.com**
+**teader_email** is **XXXXXXXXXX**
 
-**leader_passeword** is **ruthannjohnes**
+**leader_passeword** is **XXXXXXXXXX**
 
-**Creat** new **collection** and called it **Bookit** And add **new request**
+**Creat** new **collection** and called it **ANYNAME** And add **new request**
 
 **Name : GET /leader token**
 
