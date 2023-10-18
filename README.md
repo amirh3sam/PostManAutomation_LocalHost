@@ -2,7 +2,7 @@
 
 **PostMan Automation**
 |:-------------------------------------|
-$${\color{red}Welcome 
+
  **1- create workspace**
 
 then name it : MyAutomationWorkSpace 
