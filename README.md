@@ -28,7 +28,7 @@ Then **CURRENT VALUE** – > YourIpAddress
 
 **Local variable**
 
-Start one request: ** <code>GET {{sUrl}}/api/spartans →** save then run it</code>
+Start one request: <code> **GET {{sUrl}}/api/spartans →** save then run it</code>
 
 Click on **Test** tab → on the right side you have method than you can choose
 
