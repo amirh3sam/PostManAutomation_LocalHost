@@ -1,7 +1,7 @@
 ## PostMan Automation
 
 **PostMan Automation**
-```javascript
+```c
 
 **1- create workspace**
 
