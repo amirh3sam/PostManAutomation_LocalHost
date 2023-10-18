@@ -2,10 +2,10 @@
 
 **PostMan Automation**
 |:-------------------------------------|
-
-**1- create workspace**
-
-- ![#f03c15](then name it : MyAutomationWorkSpace ) `#f03c15`
+```diff
+- **1- create workspace**
+```
+then name it : MyAutomationWorkSpace 
 --
 **Test Tab →** verify response
 
