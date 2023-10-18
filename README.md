@@ -5,7 +5,7 @@
 
 **1- create workspace**
 
-![#f03c15] then name it : MyAutomationWorkSpace  `#f03c15`
+- ![#f03c15](then name it : MyAutomationWorkSpace ) `#f03c15`
 --
 **Test Tab →** verify response
 
