@@ -67,7 +67,7 @@ Another thing want to check header Transfer-Encdoing is chunked:
 ![image18](https://user-images.githubusercontent.com/69331074/234322516-7c0d4982-dfd1-4d63-a061-ea54e06cdc81.png)
 
 
-Under Spartans right click create POST {{sUrl}}/api/spartans
+Under Spartans right click create <code> POST {{sUrl}}/api/spartans </code>
 
 Under body Choose jason Then add value then send get 201 Status code
 
@@ -101,11 +101,11 @@ If want to get a name just copy and past same code then change it like this
 
 **Create Json object:**
 
-Var jsonData = pm.response.json();
+<code>Var jsonData = pm.response.json();</code>
 
 **To print name on console:**
 
-console.log(“Spartan name: “ +jsonData.data.name);
+<code>console.log(“Spartan name: “ +jsonData.data.name);</code>
 
 ![image25](https://user-images.githubusercontent.com/69331074/234322713-a59e1574-9daf-47e9-bd2c-c9e70e3e334c.png)
 
@@ -115,7 +115,8 @@ And this is a out put:
 ![image17](https://user-images.githubusercontent.com/69331074/234322751-6f0a3b95-e352-4d55-9577-b25d6639c033.png)
 
 
-Click on Spartan Colloction right click and create new request : PUT /{{sUrl}}/api/spartans/:id
+Click on Spartan Colloction right click and create new request :<code> PUT /{{sUrl}}/api/spartans/:id</code>
+
 
 And change the phone number to all 1111111111 save your change and send get 204 status code
 
@@ -143,17 +144,17 @@ On the right side click on
 
 Then save it
 
-Now we go PUT request and add id with value {{SPARTAN_ID}}
+Now we go PUT request and add id with value <code> {{SPARTAN_ID}}</code>
 
 ![image3](https://user-images.githubusercontent.com/69331074/234326928-d34b8a6b-37b4-4ca9-a262-36a6f1ee4d6a.png)
 
 
-Now want to create DELET /{{sUrl}}/api/spartans/:id
+Now want to create <code> DELET /{{sUrl}}/api/spartans/:id</code>
 
 ![image23](https://user-images.githubusercontent.com/69331074/234322961-2c5d0917-0f81-4b3e-b3d5-079f165adc62.png)
 
 
-Create GET / {{sUrl}}/api/ Spartans/:id to check that id does not exist
+Create <code> GET / {{sUrl}}/api/ Spartans/:id  </code>to check that id does not exist
 
 On Test tab check the status code and error massage
 
@@ -162,7 +163,7 @@ On Test tab check the status code and error massage
 
 We are using static **post spartan name** right now. We want to **get dynamic name** to **post** and **verify** that **name is posted.**
 
-In order to **use random** **firstname** in **our post request**, we used **{{$randomFirstName}} in request body**.
+In order to **use random** **firstname** in **our post request**, we used <code> **{{$randomFirstName}} </code> in request body**.
 
 But the **problem** is, we **cannot verify** after we **post** the name in **Tests field** in **Postman**.
 
@@ -170,13 +171,13 @@ But the **problem** is, we **cannot verify** after we **post** the name in **Tes
 
 we used **Pre-Request Script tab** from postman.
 
-**how can we use {{$randomFirstName}} in preq request script ?**
+**how can we use <code> {{$randomFirstName}} </code>in preq request script ?**
 
-var name = pm.variables.replaceIn('{{$randomFirstName}}');
+<code>var name = pm.variables.replaceIn('{{$randomFirstName}}');</code>
 
-//we set SPARTAN_NAME global variable from name variable
+--> we set SPARTAN_NAME global variable from name variable
 
-pm.globals.set("SPARTAN_NAME", name);
+<code>pm.globals.set("SPARTAN_NAME", name);</code>
 
 ![image33](https://user-images.githubusercontent.com/69331074/234323124-df3c6a0f-737c-453e-b6cf-59825669a799.png)
 
@@ -219,7 +220,7 @@ Excel file you can choose Data and click Run spartan
 
 See all result details after you run it.
 
-DDT:
+##DDT:
 
 SO IN THIS FLOW, WE USED RANDOM VARIABLE WITH SAVING AND REUSING IT.
 
@@ -238,7 +239,7 @@ Make copy of your Spartans folder and name it **Spartan DDT**
 We create one .csv file where we have name, gender and phone fields.
 
 Then our **POST REQUEST BODY** we use **those field names** with **{{}}**
-
+<code>
 {
 
 "gender":"{{gender}}",
@@ -248,7 +249,7 @@ Then our **POST REQUEST BODY** we use **those field names** with **{{}}**
 "phone":{{phone}}
 
 }
-
+</code>
 **Remove variable name** in **Pre-request** because in this case we do not need it delete everything on the Post → Pre-request
 
 Under **Test** tab **remove** global name
@@ -276,7 +277,7 @@ if the column names and variable names are matching, postman will provide those 
 
 To access to same information for each iternation dynamically in the Tests tab, we used following code
 
-var expectedName = pm.iterationData.get("name"); --> this parameter needs to match from csv column name again.
+<code>var expectedName = pm.iterationData.get("name"); </code> --> this parameter needs to match from csv column name again.
 
 We want to have **different Enviroment**
 
@@ -322,13 +323,13 @@ Next **VARIABLE** is **tearcher_email** and the **CURRENT VALUE** is **XXXXXXXXX
 
 **Name : GET /leader token**
 
-Next from top right where said no environment pick **QA1 now** when you try do your request after GET type {{baseUrl}} gonna see green that comes from Enviroment QA1
+Next from top right where said no environment pick **QA1 now** when you try do your request after GET type <code>{{baseUrl}}</code> gonna see green that comes from Enviroment QA1
 
-**GET {{baseUrl}}/sign** and add **email** and **password**
+<code>**GET {{baseUrl}}/sign** </code> and add **email** and **password**
 
-**Eamil is {{leader_email}}**
+**Eamil is <code>{{leader_email}}</code>**
 
-**Password is {{leader_password}}**
+**Password is <code>{{leader_password}</code>}**
 
 ![image7](https://user-images.githubusercontent.com/69331074/234323773-e28619b1-7d92-4fa1-a6fa-5dde800549c6.png)
 
@@ -344,13 +345,13 @@ From right side click on status code and click on Respond body : Json value chec
 
 Then we delete first line and third line and only keep the
 
-**var jsonData = pm.response.json();**
+<code>**var jsonData = pm.response.json();**</code>
 
 **And add**
 
-**console.log(jsonData.accessToken);**
+<code>**console.log(jsonData.accessToken);**</code>
 
-**Add this to var → var accessToken = jsonData.accessToken;**
+**Add this to var → <code>var accessToken = jsonData.accessToken;</code>**
 
 **After we print Token I need to add it in to my Enviroment Variable**
 
@@ -361,15 +362,15 @@ click on Set an envriment variable
 
 So you gonna see this :
 
-**pm.environment.set(“leaderToken”, accessToken);**
+<code>**pm.environment.set(“leaderToken”, accessToken);**</code>
 
 After run goona see it on your environment QA1 and QA2
 
 Then right click on Bookit and create another request
 
-**GET → {{baseUrl}}//api/users/me**
+<code>**GET → {{baseUrl}}//api/users/me**</code>
 
-**Click on Authorization and Token → type → {{leaderToke}}**
+**Click on Authorization and Token → type → <code>{{leaderToke}}</code>**
 
 ![image20](https://user-images.githubusercontent.com/69331074/234323845-0d14c44d-efa1-4954-9024-447614bddc78.png)
 
@@ -406,22 +407,22 @@ then with command line deponds on your operation system and how is work by type 
 
 **Now want to do Schema**
 
-**Get {{sUrl}}/api/spartans**
+<code>**Get {{sUrl}}/api/spartans**</code>
 
 **Test tab type :**
 
-**Var Schema = {add your schema all json objects here};**
+<code>**Var Schema = {add your schema all json objects here};**</code>
 
 ![image19](https://user-images.githubusercontent.com/69331074/234323981-8dd9cd77-b6c4-4796-8516-2f80cbcf0445.png)
 
 
 After that type:
 
-**Var response= JSON.parse(responseBody);**
+<code>**Var response= JSON.parse(responseBody);**</code>
 
-**Tests[“schema is Valid”] = tv4.validate(response,schema);**
+<code>**Tests[“schema is Valid”] = tv4.validate(response,schema);**</code>
 
-**console.log(tv4.error);**
+<code>**console.log(tv4.error);**</code>
 
 ![image14](https://user-images.githubusercontent.com/69331074/234324002-6e6ddbc0-ddcd-4cb0-8814-5fe3a4c6985e.png)
 
