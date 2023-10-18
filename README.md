@@ -1,7 +1,7 @@
 ## PostMan Automation
 
 **PostMan Automation**
-```text
+|---------------------|
 
 **1- create workspace**
 
@@ -10,7 +10,7 @@ then name it : MyAutomationWorkSpace
 **Test Tab →** verify response
 
 So we set our URL in Collection Level(Spartan folder)
-```
+
 You are in Spartan Collection click on Variavles tab
 
 Under **VARIABLE** → sUrl
