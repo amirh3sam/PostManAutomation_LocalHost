@@ -4,7 +4,7 @@
 
 **1- create workspace**
 
-then name it : MyAutomationWorkSpace
+then name it : MyAutomationWorkSpace  
 
 **Test Tab →** verify response
 
