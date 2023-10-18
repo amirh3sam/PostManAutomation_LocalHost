@@ -5,7 +5,7 @@
 
 **1- create workspace**
 
-<span style="color: green"> Some green text </span>then name it : MyAutomationWorkSpace  
+![#f03c15] then name it : MyAutomationWorkSpace  `#f03c15`
 --
 **Test Tab →** verify response
 
