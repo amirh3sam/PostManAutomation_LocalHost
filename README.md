@@ -7,7 +7,7 @@
 
 then name it : MyAutomationWorkSpace
 --
-#GOAL --> **Test Tab →** verify response
+# GOAL --> **Test Tab →** verify response
 
 --> So we nneed to set our URL in Collection Level (SWAPI folder)
 
