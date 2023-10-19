@@ -19,6 +19,7 @@ Under **VARIABLE**  type → {{baseSWAPI}}
 Then **CURRENT VALUE** – > http https://swapi.dev/api/
 
 **INTIAL VALUE** → is the url that you used to shared it with others
+
 --
 **Global variable**
 
