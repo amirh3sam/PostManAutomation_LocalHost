@@ -19,15 +19,16 @@ Then **CURRENT VALUE** – > http https://swapi.dev/api/
 
 **INTIAL VALUE** → is the url that you used to shared it with others
 
-**Global variable**
+see other type of variable : 
+- **Global variable**
 
-**Collection variable**
+- **Collection variable**
 
-**Environment variable**
+- **Environment variable**
 
-**Data variable**
+- **Data variable**
 
-**Local variable**
+- **Local variable**
 
 Start one request: <code> **GET {{sUrl}}/api/spartans →** save then run it</code>
 
