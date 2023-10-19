@@ -3,7 +3,7 @@
 
 ## **PostMan Automation**
 
-
+First we are going to practice on one of the Dummy APi SWAPI-> https://swapi.dev/
  **Start with  => create workspace**
    Name it : MyAutomationAPI
 
@@ -46,9 +46,6 @@ pm.test("Status code is 200", function () {
     pm.response.to.have.status(200);
 });
 ```
-
-![image](https://github.com/amirh3sam/Post-Man-Automation/assets/69331074/c6fdbcfe-1121-470e-814c-43f8b3552e07)
-
 
 ** Just need to change that 200 inside the () to any status code you want**
 
