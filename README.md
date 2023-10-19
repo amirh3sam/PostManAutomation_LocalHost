@@ -4,14 +4,13 @@
 ## **PostMan Automation**
 
 First we are going to practice on one of the Dummy API SWAPI-> https://swapi.dev/
-
- **Start with  => create workspace**
-   Name it : MyAutomationAPI
-
 #### GOAL is to automate and verify responses
 
  ---
-
+ 
+ **Start with  => create workspace**
+   Name it : MyAutomationAPI
+   
 --> So we need to set our URL in Collection Level (name it - >  SWAPI )
 
 You are in SWAPI Collection click on Variavles tab
