@@ -3,9 +3,9 @@
 **PostMan Automation**
 |:-------------------------------------|
 
- **1- create workspace**
+# **1- create workspace**
 
-then name it : MyAutomationWorkSpace
+ name it : MyAutomationAPI
 --
 ## GOAL --> **Test Tab →** verify response
 
