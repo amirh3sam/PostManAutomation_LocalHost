@@ -4,6 +4,7 @@
 ## **PostMan Automation**
 
 First we are going to practice on one of the Dummy APi SWAPI-> https://swapi.dev/
+
  **Start with  => create workspace**
    Name it : MyAutomationAPI
 
