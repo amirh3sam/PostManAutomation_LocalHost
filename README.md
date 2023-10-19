@@ -6,12 +6,14 @@
 |:-------------------------------------|
 
 # **1- create workspace**
+
 **Run and show result**: use the `print()` function to display your result.
 ```js
 const array1 = [1, 4, 9, 16];
 const map1 = array1.map(x => x * 2)
 print(map1)
 ```
+
  name it : MyAutomationAPI
 --
 ## GOAL --> **Test Tab →** verify response
