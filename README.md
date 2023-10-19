@@ -1,7 +1,7 @@
 
 ![image](https://github.com/amirh3sam/Post-Man-Automation/assets/69331074/9e109094-70c0-430f-93c7-288187c27cad)
 
-## **PostMan Automation**
+##:heavy_check_mark: **PostMan Automation**
 
 First we are going to practice with one of the Dummy API - SWAPI :arrow_right: https://swapi.dev/
 #### GOAL is to automate and verify responses
@@ -202,20 +202,20 @@ we used **Pre-Request Script tab** from postman.
 ![image29](https://user-images.githubusercontent.com/69331074/234323590-14de02b4-2b61-4fb6-a51e-a8ebaf4d6cce.png)
 
 
-## **FLOW—>**
+## **:heavy_check_mark: FLOW :arrow_right: **
 
-First Pre-Req Scrip
+:heavy_check_mark: First Pre-Req Scrip
 
-Then API Request
+:heavy_check_mark: Then API Request
 
-Then API Response
+:heavy_check_mark: Then API Response
 
-Last Test
+:heavy_check_mark: Last Test
 
 ![image26](https://user-images.githubusercontent.com/69331074/234323614-fdf63b30-3146-4487-9fa8-3160f1eeed75.png)
 
 
-Set global name
+:heavy_check_mark: Set global name
 
 Then after request and response complete, under Test tab, we read the Global variable SPARTAN_NAME and assign as an expectedName
 
@@ -225,7 +225,7 @@ Then after request and response complete, under Test tab, we read the Global var
 ![image30](https://user-images.githubusercontent.com/69331074/234323670-fdd7c3f0-5470-4679-bdcb-ef1c24f5831a.png)
 
 
-## RUN Collection
+## :heavy_check_mark: RUN Collection
 
 You can run whole collection here also can give schedules run
 
@@ -237,7 +237,7 @@ Excel file you can choose Data and click Run spartan
 
 See all result details after you run it.
 
-## DDT:
+##:heavy_check_mark: DDT:
 
 SO IN THIS FLOW, WE USED RANDOM VARIABLE WITH SAVING AND REUSING IT.
 
@@ -392,11 +392,11 @@ Then right click on Bookit and create another request
 ![image20](https://user-images.githubusercontent.com/69331074/234323845-0d14c44d-efa1-4954-9024-447614bddc78.png)
 
 
-## **DDT** with **schedule** **after click** on **Run collection** from **Spartan collection**
+##:heavy_check_mark: **DDT** with **schedule** **after click** on **Run collection** from **Spartan collection**
 
 On there
 
-**Schedule configuration**
+**:heavy_check_mark: Schedule configuration**
 
 give **name** like **SMOKE TEST EVERY DAY** at **8:00AM** and can choose **Environment** like **QA1** and Click **Schudel Run**
 
@@ -413,7 +413,7 @@ then with command line deponds on your operation system and how is work by type 
 
 **Or**
 
-## **Run on CI/CD pipe line**
+##:heavy_check_mark: **Run on CI/CD pipe line**
 
 **You can pick Jenkins and run it !**
 
@@ -422,7 +422,7 @@ then with command line deponds on your operation system and how is work by type 
 ![image37](https://user-images.githubusercontent.com/69331074/234323956-2396bca1-442e-4595-9728-9c25a432fa62.png)
 
 
-**Now want to do Schema**
+**:heavy_check_mark: Now want to do Schema**
 
 <code>**Get {{baseSWAPI}}/api/spartans**</code>
 
