@@ -4,10 +4,9 @@
 |:-------------------------------------|
 
  **1- create workspace**
-```html
+
 then name it : MyAutomationWorkSpace
-$${\color{red}Welcome
-```
+
 --
 **Test Tab →** verify response
 
