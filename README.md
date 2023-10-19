@@ -9,7 +9,7 @@
 --
 ## GOAL --> **Test Tab →** verify response
 
---> So we nneed to set our URL in Collection Level (SWAPI folder)
+--> So we need to set our URL in Collection Level (SWAPI folder)
 
 You are in SWAPI Collection click on Variavles tab
 
@@ -20,6 +20,7 @@ Then **CURRENT VALUE** – > http https://swapi.dev/api/
 **INTIAL VALUE** → is the url that you used to shared it with others
 
 see other type of variable : 
+
 - **Global variable**
 
 - **Collection variable**
@@ -30,7 +31,7 @@ see other type of variable :
 
 - **Local variable**
 
-Start one request: <code> **GET {{sUrl}}/api/spartans →** save then run it</code>
+Start one request: <code> **GET {{sUrl}} →** save then run it</code>
 
 Click on **Test** tab → on the right side you have method than you can choose
 
