@@ -6,10 +6,9 @@
  **1- create workspace**
 
 then name it : MyAutomationWorkSpace
-
 --
 GOAL --> **Test Tab →** verify response
-
+--
 --> So we nneed to set our URL in Collection Level (SWAPI folder)
 
 You are in SWAPI Collection click on Variavles tab
@@ -19,8 +18,7 @@ Under **VARIABLE**  type → {{baseSWAPI}}
 Then **CURRENT VALUE** – > http https://swapi.dev/api/
 
 **INTIAL VALUE** → is the url that you used to shared it with others
-
---
+----------------------------------------------------------------------
 **Global variable**
 
 **Collection variable**
