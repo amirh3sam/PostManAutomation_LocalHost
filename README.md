@@ -31,49 +31,56 @@ see other type of variable :
 
 - **Local variable**
 
-Start one request: <code> **GET {{sUrl}} →** save then run it</code>
+Start one request: <code> **GET {{baseSWAPI}} →** save then run it</code>
 
 Click on **Test** tab → on the right side you have method than you can choose
 
 Inside Test you need to type JS code
 
-![image](https://github.com/amirh3sam/Post-Man-Automation/assets/69331074/b935f984-7f36-4d56-b08c-9095c92b334b)
-
-
 Click on
+![image](https://github.com/amirh3sam/Post-Man-Automation/assets/69331074/21935791-c987-477c-84ac-787c41f18780)
 
 **→ to verify status code**.
 
-![image12](https://user-images.githubusercontent.com/69331074/234321003-f252c99a-fdd1-40b9-89c4-47dc1d6e9b74.png)
+![image](https://github.com/amirh3sam/Post-Man-Automation/assets/69331074/c6fdbcfe-1121-470e-814c-43f8b3552e07)
 
-Just need to change that 200 inside the () then your code will test other Status code
+
+** Just need to change that 200 inside the () then your code will test other Status code **
 
 Then run gonna see under Test Results shows pass
 
 → to verify headers
 
-![image9](https://user-images.githubusercontent.com/69331074/234322247-ced54f76-d28e-48c6-bcdd-bc0f79468267.png)
+![image](https://github.com/amirh3sam/Post-Man-Automation/assets/69331074/2ac56a9f-69ee-4966-afd0-6d1df1f3e865)
 
-![image32](https://user-images.githubusercontent.com/69331074/234322324-1f4f96dd-40a3-4971-8fa2-090264314f36.png)
+![image](https://github.com/amirh3sam/Post-Man-Automation/assets/69331074/cac810a7-ebfb-4895-b2e0-498e07eb562e)
+
 
 → if you want to verify for example Date is present in the header just need to copy and past same code and change instead “Content-type” chenge to “Date” then click Send
+in this API (Header) we do not have date or Contnet-Type
 
-![image21](https://user-images.githubusercontent.com/69331074/234322355-0139d682-70db-4e20-900a-aaf2f11e4d1f.png)
 
-Is not case sensitive instead Date you can type date
+![image](https://github.com/amirh3sam/Post-Man-Automation/assets/69331074/75765449-edd6-4739-883f-abb0a101427f)
+
+## Is not case sensitive instead Date you can type date
 
 Now want to verify content type is application/json now in second line after “Content-Type” add comma and type “applicaiton/json”
 
-![image5](https://user-images.githubusercontent.com/69331074/234322387-a4f12151-8ae9-4eb3-8cbf-c4ddb85d34a4.png)
+![image](https://github.com/amirh3sam/Post-Man-Automation/assets/69331074/a5d2f026-104d-4e16-a905-fa09fc8e56ec)
+
 
 Another thing want to check header Transfer-Encdoing is chunked:
 
-![image18](https://user-images.githubusercontent.com/69331074/234322516-7c0d4982-dfd1-4d63-a061-ea54e06cdc81.png)
+![image](https://github.com/amirh3sam/Post-Man-Automation/assets/69331074/adafc196-106a-45b4-83da-be13249bb401)
+
+in this example we do have this Types in header you can Practice =
+![image](https://github.com/amirh3sam/Post-Man-Automation/assets/69331074/9ad77b69-b3be-45de-b60a-d30bd8588da6)
 
 
-Under Spartans right click create <code> POST {{sUrl}}/api/spartans </code>
+if you have a API that allow you to post for example after you  create <code> POST {{YOURLINK}} </code>
 
 Under body Choose jason Then add value then send get 201 Status code
+as you see on this example we add one json file to our database 
 
 ![image24](https://user-images.githubusercontent.com/69331074/234322543-ebf2c659-0742-45b4-b062-2ad49b66f7e2.png)
 
@@ -119,7 +126,7 @@ And this is a out put:
 ![image17](https://user-images.githubusercontent.com/69331074/234322751-6f0a3b95-e352-4d55-9577-b25d6639c033.png)
 
 
-Click on Spartan Colloction right click and create new request :<code> PUT /{{sUrl}}/api/spartans/:id</code>
+Click on your Collection that allows to use PUT HTTP request  right click and create new request :<code> PUT /{{YOURURL}}/:id</code>
 
 
 And change the phone number to all 1111111111 save your change and send get 204 status code
@@ -133,7 +140,7 @@ Click on status code and change it 204
 
 At this point we need to capture the id from POST request
 
-We going back on our POST request and on Test tab need to save our jsondata into global variable
+We going back on our POST request and on Test tab need to save our ** json data into global variable **
 
 ![image28](https://user-images.githubusercontent.com/69331074/234322880-64993d78-8465-42fd-bf98-60c5f68ab7d0.png)
 
@@ -153,12 +160,12 @@ Now we go PUT request and add id with value <code> {{SPARTAN_ID}}</code>
 ![image3](https://user-images.githubusercontent.com/69331074/234326928-d34b8a6b-37b4-4ca9-a262-36a6f1ee4d6a.png)
 
 
-Now want to create <code> DELET /{{sUrl}}/api/spartans/:id</code>
+Now want to create <code> DELET /{{baseSWAPI}}/api/spartans/:id</code>
 
 ![image23](https://user-images.githubusercontent.com/69331074/234322961-2c5d0917-0f81-4b3e-b3d5-079f165adc62.png)
 
 
-Create <code> GET / {{sUrl}}/api/ Spartans/:id  </code>to check that id does not exist
+Create <code> GET / {{baseSWAPI}}/api/ Spartans/:id  </code>to check that id does not exist
 
 On Test tab check the status code and error massage
 
@@ -175,7 +182,7 @@ But the **problem** is, we **cannot verify** after we **post** the name in **Tes
 
 we used **Pre-Request Script tab** from postman.
 
-**how can we use <code> {{$randomFirstName}} </code>in preq request script ?**
+**how can we use <code> {{$randomFirstName}} </code>in pre request script ?**
 
 <code>var name = pm.variables.replaceIn('{{$randomFirstName}}');</code>
 
@@ -224,7 +231,7 @@ Excel file you can choose Data and click Run spartan
 
 See all result details after you run it.
 
-##DDT:
+## DDT:
 
 SO IN THIS FLOW, WE USED RANDOM VARIABLE WITH SAVING AND REUSING IT.
 
@@ -411,7 +418,7 @@ then with command line deponds on your operation system and how is work by type 
 
 **Now want to do Schema**
 
-<code>**Get {{sUrl}}/api/spartans**</code>
+<code>**Get {{baseSWAPI}}/api/spartans**</code>
 
 **Test tab type :**
 
