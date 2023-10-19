@@ -10,6 +10,8 @@ First we are going to practice on one of the Dummy API SWAPI-> https://swapi.dev
 
 #### GOAL is to automate and verify responses
 
+ ---
+
 --> So we need to set our URL in Collection Level (name it - >  SWAPI )
 
 You are in SWAPI Collection click on Variavles tab
