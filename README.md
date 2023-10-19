@@ -3,7 +3,7 @@
 
 ## **PostMan Automation**
 
-First we are going to practice on one of the Dummy API SWAPI-> https://swapi.dev/
+First we are going to practice with one of the Dummy API - SWAPI-> https://swapi.dev/
 #### GOAL is to automate and verify responses
 
  ---
