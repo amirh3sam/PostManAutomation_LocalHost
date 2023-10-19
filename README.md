@@ -41,6 +41,11 @@ Click on
 ![image](https://github.com/amirh3sam/Post-Man-Automation/assets/69331074/21935791-c987-477c-84ac-787c41f18780)
 
 **→ to verify status code**.
+```javaScript
+pm.test("Status code is 200", function () {
+    pm.response.to.have.status(200);
+});
+```
 
 ![image](https://github.com/amirh3sam/Post-Man-Automation/assets/69331074/c6fdbcfe-1121-470e-814c-43f8b3552e07)
 
