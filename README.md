@@ -8,18 +8,18 @@
 then name it : MyAutomationWorkSpace
 
 --
-**Test Tab →** verify response
+GOAL --> **Test Tab →** verify response
 
-So we set our URL in Collection Level(Spartan folder)
+--> So we nneed to set our URL in Collection Level (SWAPI folder)
 
-You are in Spartan Collection click on Variavles tab
+You are in SWAPI Collection click on Variavles tab
 
-Under **VARIABLE** → sUrl
+Under **VARIABLE**  type → {{baseSWAPI}}
 
-Then **CURRENT VALUE** – > YourIpAddress
+Then **CURRENT VALUE** – > http https://swapi.dev/api/
 
 **INTIAL VALUE** → is the url that you used to shared it with others
-
+--
 **Global variable**
 
 **Collection variable**
