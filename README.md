@@ -3,7 +3,7 @@
 
 ## **PostMan Automation**
 
-First we are going to practice with one of the Dummy API - SWAPI-> https://swapi.dev/
+First we are going to practice with one of the Dummy API - SWAPI :arrow_right: https://swapi.dev/
 #### GOAL is to automate and verify responses
 
  ---
@@ -11,7 +11,7 @@ First we are going to practice with one of the Dummy API - SWAPI-> https://swapi
  **Start with  => create workspace**
    Name it : MyAutomationAPI
    
---> So we need to set our URL in Collection Level (name it - >  SWAPI )
+-:arrow_right: So we need to set our URL in Collection Level (name it - >  SWAPI )
 
 You are in SWAPI Collection click on Variavles tab
 
@@ -192,7 +192,7 @@ we used **Pre-Request Script tab** from postman.
 
 <code>var name = pm.variables.replaceIn('{{$randomFirstName}}');</code>
 
---> we set SPARTAN_NAME global variable from name variable
+-:arrow_right: we set SPARTAN_NAME global variable from name variable
 
 <code>pm.globals.set("SPARTAN_NAME", name);</code>
 
@@ -294,7 +294,7 @@ if the column names and variable names are matching, postman will provide those 
 
 To access to same information for each iternation dynamically in the Tests tab, we used following code
 
-<code>var expectedName = pm.iterationData.get("name"); </code> --> this parameter needs to match from csv column name again.
+<code>var expectedName = pm.iterationData.get("name"); </code> -:arrow_right: this parameter needs to match from csv column name again.
 
 We want to have **different Enviroment**
 
