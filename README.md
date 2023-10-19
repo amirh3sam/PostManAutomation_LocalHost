@@ -31,6 +31,7 @@ see other type of variable :
 - **Data variable**
 
 - **Local variable**
+  
   ---
 
 Start one request: <code> **GET {{baseSWAPI}} →** save then run it</code>
