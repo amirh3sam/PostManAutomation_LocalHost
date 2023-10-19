@@ -1,28 +1,19 @@
 
 ![image](https://github.com/amirh3sam/Post-Man-Automation/assets/69331074/9e109094-70c0-430f-93c7-288187c27cad)
-## PostMan Automation
 
-**PostMan Automation**
-|:-------------------------------------|
+## **PostMan Automation**
 
-# **1- create workspace**
 
-**Run and show result**: use the `print()` function to display your result.
-```js
-const array1 = [1, 4, 9, 16];
-const map1 = array1.map(x => x * 2)
-print(map1)
-```
+ **Start with  => create workspace**
+   Name it : MyAutomationAPI
 
- name it : MyAutomationAPI
---
-## GOAL --> **Test Tab →** verify response
+#### GOAL --> **on Test Tab →**  verify response
 
---> So we need to set our URL in Collection Level (SWAPI folder)
+--> So we need to set our URL in Collection Level (name it - >  SWAPI )
 
 You are in SWAPI Collection click on Variavles tab
 
-Under **VARIABLE**  type → {{baseSWAPI}}
+Under **VARIABLE**  type → ``` {{baseSWAPI}}```
 
 Then **CURRENT VALUE** – > http https://swapi.dev/api/
 
@@ -54,7 +45,7 @@ Click on
 ![image](https://github.com/amirh3sam/Post-Man-Automation/assets/69331074/c6fdbcfe-1121-470e-814c-43f8b3552e07)
 
 
-** Just need to change that 200 inside the () then your code will test other Status code **
+** Just need to change that 200 inside the () to any status code you want**
 
 Then run gonna see under Test Results shows pass
 
@@ -71,7 +62,7 @@ in this API (Header) we do not have date or Contnet-Type
 
 ![image](https://github.com/amirh3sam/Post-Man-Automation/assets/69331074/75765449-edd6-4739-883f-abb0a101427f)
 
-## Is not case sensitive instead Date you can type date
+#### Is not case sensitive instead Date you can type date
 
 Now want to verify content type is application/json now in second line after “Content-Type” add comma and type “applicaiton/json”
 
