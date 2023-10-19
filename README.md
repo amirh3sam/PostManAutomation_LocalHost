@@ -37,7 +37,8 @@ Click on **Test** tab → on the right side you have method than you can choose
 
 Inside Test you need to type JS code
 
-![image35](https://user-images.githubusercontent.com/69331074/234320102-de0e7c3e-3402-4574-8072-e4cfdb2bbf68.png)
+![image](https://github.com/amirh3sam/Post-Man-Automation/assets/69331074/b935f984-7f36-4d56-b08c-9095c92b334b)
+
 
 Click on
 
