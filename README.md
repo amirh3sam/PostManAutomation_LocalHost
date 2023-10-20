@@ -45,6 +45,7 @@ Click on
 ![image](https://github.com/amirh3sam/Post-Man-Automation/assets/69331074/21935791-c987-477c-84ac-787c41f18780)
 
 **→ to verify status code**.
+
 ```javaScript
 pm.test("Status code is 200", function () {
     pm.response.to.have.status(200);
@@ -59,25 +60,41 @@ Then run gonna see under Test Results shows pass
 
 ![image](https://github.com/amirh3sam/Post-Man-Automation/assets/69331074/2ac56a9f-69ee-4966-afd0-6d1df1f3e865)
 
-![image](https://github.com/amirh3sam/Post-Man-Automation/assets/69331074/cac810a7-ebfb-4895-b2e0-498e07eb562e)
+```JavaScript
+pm.test("Content-Type is present", function () {
+    pm.response.to.have.header("Content-Type");
+});
+```
 
 
 → if you want to verify for example Date is present in the header just need to copy and past same code and change instead “Content-type” chenge to “Date” then click Send
 in this API (Header) we do not have date or Contnet-Type
 
 
-![image](https://github.com/amirh3sam/Post-Man-Automation/assets/69331074/75765449-edd6-4739-883f-abb0a101427f)
+```JavaScript
+pm.test("Date is present", function () {
+    pm.response.to.have.header("Date");
+});
+```
+
 
 #### Is not case sensitive instead Date you can type date
 
 Now want to verify content type is application/json now in second line after “Content-Type” add comma and type “applicaiton/json”
 
-![image](https://github.com/amirh3sam/Post-Man-Automation/assets/69331074/a5d2f026-104d-4e16-a905-fa09fc8e56ec)
-
+```JavaScript
+pm.test("Content-Type is applicaiton/json, function () {
+    pm.response.to.have.header("Content-Type","applicaiton/json");
+});
+```
 
 Another thing want to check header Transfer-Encdoing is chunked:
 
-![image](https://github.com/amirh3sam/Post-Man-Automation/assets/69331074/adafc196-106a-45b4-83da-be13249bb401)
+```JavaScript
+pm.test("Transfer-Encdoing is chunked, function () {
+    pm.response.to.have.header("Transfer-Encdoing","chunked");
+});
+```
 
 in this example we do have this Types in header you can Practice =
 ![image](https://github.com/amirh3sam/Post-Man-Automation/assets/69331074/9ad77b69-b3be-45de-b60a-d30bd8588da6)
