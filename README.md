@@ -18,7 +18,7 @@ after you click on APIPractice you can see the Tab called "Variavles " and click
 
 :pushpin: **STEP 2 :**Under **VARIABLE**  column type →  ``` heroUrl ```
 
-Then under **CURRENT VALUE** – > ```javaScript  http://localhost:3000 ```
+Then under **CURRENT VALUE** – > ```java  http://localhost:3000 ```
 
 **INTIAL VALUE** → is the url that you used to shared it with others
 
