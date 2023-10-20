@@ -10,17 +10,15 @@ In order to set up a free server effortlessly, you can generate the server by ex
 after you create the server now we can do some testing and verificaiton on responses :arrow_right: http://localhost:3000
 
  ---
+:pushpin: **STEP 1 :**Establish a workspace and assign it any name you prefer, such as "MyAutomationAPI."
  
- **Start with  => create workspace**
-   Name it : MyAutomationAPI
-   
--:arrow_right: So we need to set our URL in Collection Level (name it - >  SWAPI )
+-:arrow_right: now need to create a Collection and give a name like  APIPractice )
 
-You are in SWAPI Collection click on Variavles tab
+after you click on APIPractice you can see the Tab called "Variavles " and click on it.
 
-Under **VARIABLE**  type → ``` {{baseSWAPI}}```
+:pushpin: **STEP 2 :**Under **VARIABLE**  column type →  ``` heroUrl ```
 
-Then **CURRENT VALUE** – > http https://swapi.dev/api/
+Then under **CURRENT VALUE** – > ```javaScript  http://localhost:3000 ```
 
 **INTIAL VALUE** → is the url that you used to shared it with others
 
