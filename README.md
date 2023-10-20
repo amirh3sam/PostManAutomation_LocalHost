@@ -3,6 +3,10 @@
 
 ##:heavy_check_mark: **PostMan Automation**
 
+In order to set up a free server effortlessly, you can generate the server by executing a few lines of code in the command prompt. To learn how to create your own local server for testing HTTP API requests, visit this GitHub page https://github.com/amirh3sam/Post-Man-Automation , which provides instructions on the process. With this server, you can conduct tests involving GET, POST, PUT, PATCH, and DELETE methods on data pertaining to name, gender, and age. Begin by establishing a database on your local host to assess GET and POST operations for data creation. You can also utilize this server to DELETE or UPDATE your database as needed. Once the server is up and running, you can proceed to Postman for automated testing.
+
+
+check out his li
 First we are going to practice with one of the Dummy API - SWAPI :arrow_right: https://swapi.dev/
 #### GOAL is to automate and verify responses
 
