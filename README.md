@@ -10,15 +10,15 @@ In order to set up a free server effortlessly, you can generate the server by ex
 after you create the server now we can do some testing and verificaiton on responses :arrow_right: http://localhost:3000
 
  ---
-:pushpin: **STEP 1 :**Establish a workspace and assign it any name you prefer, such as "MyAutomationAPI."
+:pushpin: **STEP 1** : Establish a workspace and assign it any name you prefer, such as "MyAutomationAPI."
  
--:arrow_right: now need to create a Collection and give a name like  APIPractice )
+:arrow_right: now need to create a Collection and give a name like  APIPractice )
 
 after you click on APIPractice you can see the Tab called "Variavles " and click on it.
 
-:pushpin: **STEP 2 :**Under **VARIABLE**  column type →  ``` heroUrl ```
+:pushpin: **STEP 2** : Under **VARIABLE**  column type →  ``` heroUrl ```
 
-Then under **CURRENT VALUE** – > ```java  http://localhost:3000 ```
+Then under **CURRENT VALUE** – > ```http://localhost:3000 ```
 
 **INTIAL VALUE** → is the url that you used to shared it with others
 
@@ -33,10 +33,13 @@ see other type of variable :
 - **Data variable**
 
 - **Local variable**
+  now high light the variable and choose set as variable and name it HeroBaseUrl choose global
+  ![image](https://github.com/amirh3sam/Post-Man-Automation/assets/69331074/3d370534-9f05-4c1b-b316-19adbd319668)
+  ![image](https://github.com/amirh3sam/Post-Man-Automation/assets/69331074/c4a918b3-eb39-441f-9265-ac04a1a44c84)
   
 ---
-
-Start one request: <code> **GET {{baseSWAPI}} →** save then run it</code>
+:pushpin: **STEP 3** :
+our first request: <code> **GET  →** save then run it</code>
 
 Click on **Test** tab → on the right side you have method than you can choose
 
