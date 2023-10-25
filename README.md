@@ -123,13 +123,29 @@ Now from right side click on Respond body: Json value check
 Now need to change in third line **value** to **msg** and **100** to **"Your hero successfully added to the database."**
 ![image](https://github.com/amirh3sam/Post-Man-Automation/assets/69331074/16b8abf1-2925-43b4-a090-ab8644162ee3)
 
+##Create Json object:
+```javaScript
+var jsonData = pm.response.json();
+```
+To print name on console:
+```javaScript
+console.log("Hero name: " +jsonData.name);
+```
+Also age and gender of specefic id :
+
+```javaScript
+console.log("Hero age: " +jsonData.age);
+```
+```javaScript
+console.log("Hero gender: " +jsonData.gender);
+```
+
 
 :pushpin: **STEP 7**:
 Click on your Collection that allows to use PUT HTTP request right click and create new request :<code> PUT:  http://localhost:3000/heros/:id</code>
 
 And change the age number to all 32 from any user id save your change and send get 204 status code
 ![image](https://github.com/amirh3sam/Post-Man-Automation/assets/69331074/ee5dfe9c-2b2d-4262-bd2b-e075e9660511)
-
 
 Now click on Test
 
@@ -139,20 +155,16 @@ At this point we need to capture the id from POST request
 
 We going back on our POST request and on Test tab need to save our **json data into global variable**
 
-![image28](https://user-images.githubusercontent.com/69331074/234322880-64993d78-8465-42fd-bf98-60c5f68ab7d0.png)
-
-
 ![image16](https://user-images.githubusercontent.com/69331074/234322900-7a2e9f72-910a-499d-9888-e41b1a4902ad.png)
-
 
 On the right side click on
 
-![image34](https://user-images.githubusercontent.com/69331074/234322924-2fc04968-1aeb-4503-9439-03ab04e859f8.png)
+![image](https://github.com/amirh3sam/Post-Man-Automation/assets/69331074/98fda85d-d1c1-46ae-bed0-68edff21edcf)
 
+![image](https://github.com/amirh3sam/Post-Man-Automation/assets/69331074/1ce9f47a-0e7d-4015-bb0a-dd85654de055)
+Then save it.
 
-Then save it
-
-Now we go PUT request and add id with value <code></code>
+Now we go PUT request and add id with value 
 
 ![image3](https://user-images.githubusercontent.com/69331074/234326928-d34b8a6b-37b4-4ca9-a262-36a6f1ee4d6a.png)
 
