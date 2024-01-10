@@ -322,7 +322,7 @@ then with command line depends on your operation system and how it works Typing 
 
 **Or**
 
-## :heavy_check_mark: **Run on CI/CD pipeline
+## :heavy_check_mark: Run on CI/CD pipeline
 
 **You can pick Jenkins and run it !**
 
