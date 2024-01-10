@@ -253,7 +253,7 @@ SO IN THIS FLOW, WE USED RANDOM VARIABLES WITH SAVING AND REUSING IT.
 
 CAN WE USE POSTMAN AUTOMATION WITH EXTERNAL DATA/FILE
 
-**I want to use my .csv file to automate Spartan Flow**
+**I want to use my .csv file to automate Heros Flow**
 
 Make a copy of your Hero folder and name it **HERO DDT**
 
