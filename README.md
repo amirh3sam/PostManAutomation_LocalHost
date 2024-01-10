@@ -97,7 +97,7 @@ Another thing wants to check header Transfer-Encoding is chunked:
 
 ```JavaScript
 pm.test("Transfer-Encoding is chunked", function () {
-    pm.response.to.have.header("Transfer-Encoding","chunked");
+    pm.response.to.have.header("Transfer-Encoding", "chunked");
 });
 ```
 
@@ -147,64 +147,67 @@ console.log("Hero gender: " +jsonData.data.gender);
 ```
 ![image](https://github.com/amirh3sam/Post-Man-Automation/assets/69331074/60840449-e204-4f8e-b7f9-a87927be0753)
 
-on console we are able to see the result :
+on the console, we can see the result :
 ![image](https://github.com/amirh3sam/Post-Man-Automation/assets/69331074/c00f68e1-0ceb-44f8-9b3b-459917f54ce7)
 
 :pushpin: **STEP 7**:
-Click on your Collection that allows to use PUT HTTP request right click and create new request :<code> PUT:  http://localhost:3000/heros/:id</code>
+Click on the Collection that allows you to use PUT HTTP request, Right click and create a new request:<code> PUT:  http://localhost:3000/heros/:id</code>
 
-And change the age number to all 32 from any user id save your change and send get 204 status code
+Change the age number to something different from any user id then save your change and send get 204 status code
 ![image](https://github.com/amirh3sam/Post-Man-Automation/assets/69331074/ee5dfe9c-2b2d-4262-bd2b-e075e9660511)
 
 Now click on Test
 
-Click on status code and change it 204
+Click on the status code and change it to 204
 
-At this point we need to capture the id from POST request
+At this point, we need to capture the ID from the POST request
 
-We going back on our POST request and on Test tab need to save our **json data into global variable**
+We going back to our POST request and Test tab need to save our **json data into global variable**
 
-![image16](https://user-images.githubusercontent.com/69331074/234322900-7a2e9f72-910a-499d-9888-e41b1a4902ad.png)
-
-On the right side click on
-
+On the right side click on:
 ![image](https://github.com/amirh3sam/Post-Man-Automation/assets/69331074/98fda85d-d1c1-46ae-bed0-68edff21edcf)
 
-![image](https://github.com/amirh3sam/Post-Man-Automation/assets/69331074/1ce9f47a-0e7d-4015-bb0a-dd85654de055)
+![image](https://github.com/amirh3sam/Post-Man-Automation/assets/69331074/0dab2aa5-36ab-4238-be1b-889e6f49771b)
+
 Then save it.
 
-Now we go PUT request and add id with value 
+Now we go PUT request in Path Param and add id with global value 
 
-![image3](https://user-images.githubusercontent.com/69331074/234326928-d34b8a6b-37b4-4ca9-a262-36a6f1ee4d6a.png)
-
-
-Now want to create <code> DELET /{{baseSWAPI}}/api/spartans/:id</code>
-
-![image23](https://user-images.githubusercontent.com/69331074/234322961-2c5d0917-0f81-4b3e-b3d5-079f165adc62.png)
+![image](https://github.com/amirh3sam/Post-Man-Automation/assets/69331074/19c4de15-adfc-4b2c-960b-d28b4ca223da)
 
 
-Create <code> GET / {{baseSWAPI}}/api/ Spartans/:id  </code>to check that id does not exist
+and in the Body tab, we can change the age to a different value and save and run;
 
-On Test tab check the status code and error massage
-
-![image11](https://user-images.githubusercontent.com/69331074/234323035-d11121a0-d802-4569-8cf9-93bd68dc04d6.png)
+![image](https://github.com/amirh3sam/Post-Man-Automation/assets/69331074/1cae6079-f68a-41f9-84db-2cbea599710a)
 
 
-We are using static **post spartan name** right now. We want to **get dynamic name** to **post** and **verify** that **name is posted.**
+Now want to delete that Global variable that we create with post and edit it with Put:
+![image](https://github.com/amirh3sam/Post-Man-Automation/assets/69331074/88051914-c36e-4d24-ae00-bc8d4ddc31cc)
+
+we can create another request to see if the delete works fine or not :
+![image](https://github.com/amirh3sam/Post-Man-Automation/assets/69331074/f2ff56e5-c5f0-4ad5-b1fd-08e4db8f0641)
+
+On the Test tab check the status code and error message
+
+![image](https://github.com/amirh3sam/Post-Man-Automation/assets/69331074/31af0ded-6adc-4e79-a2e4-2b9afc7ea9e7)
+
+
+We are using static **post Hero name** right now. We want to **get dynamic name** to **post** and **verify** that **name is posted.**
 
 In order to **use random** **firstname** in **our post request**, we used <code> **{{$randomFirstName}} </code> in request body**.
 
-But the **problem** is, we **cannot verify** after we **post** the name in **Tests field** in **Postman**.
+But the **problem** is, that we **cannot verify** after we **post** the name in the **Tests field** in **Postman**.
 
 **To overcome this problem.**
 
-we used **Pre-Request Script tab** from postman.
+we used the **Pre-Request Script tab** from Postman.
+
 
 **how can we use <code> {{$randomFirstName}} </code>in pre request script ?**
 
 <code>var name = pm.variables.replaceIn('{{$randomFirstName}}');</code>
 
--:arrow_right: we set SPARTAN_NAME global variable from name variable
+:arrow_right: we set HERO_NAME global variable from name variable
 
 <code>pm.globals.set("SPARTAN_NAME", name);</code>
 
@@ -214,7 +217,7 @@ we used **Pre-Request Script tab** from postman.
 ![image29](https://user-images.githubusercontent.com/69331074/234323590-14de02b4-2b61-4fb6-a51e-a8ebaf4d6cce.png)
 
 
-## **:heavy_check_mark: FLOW :arrow_right: **
+## ** :heavy_check_mark: FLOW :arrow_right: **
 
 :heavy_check_mark: First Pre-Req Scrip
 
@@ -224,12 +227,10 @@ we used **Pre-Request Script tab** from postman.
 
 :heavy_check_mark: Last Test
 
-![image26](https://user-images.githubusercontent.com/69331074/234323614-fdf63b30-3146-4487-9fa8-3160f1eeed75.png)
-
-
 :heavy_check_mark: Set global name
+Then after the request and response are complete, under the Test tab, we read the Global variable HERO_NAME and assign it as an expectedName
+![image](https://github.com/amirh3sam/Post-Man-Automation/assets/69331074/85e73473-69ba-4a4c-b026-744a91277105)
 
-Then after request and response complete, under Test tab, we read the Global variable SPARTAN_NAME and assign as an expectedName
 
 ![image2](https://user-images.githubusercontent.com/69331074/234323638-3c937d2b-0965-4500-b928-5a43461bff5c.png)
 
