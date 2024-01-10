@@ -7,7 +7,7 @@ To set up a free server effortlessly, you can generate the server by executing a
 
 
 
-after you create the server now we can do some testing and verification on responses :arrow_right: http://localhost:3001
+after you create the server now we can do some testing and verification on responses :arrow_right: http://localhost:3000
 
  ---
 :pushpin: **STEP 1**: 
