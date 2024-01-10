@@ -209,15 +209,16 @@ we used the **Pre-Request Script tab** from Postman.
 
 :arrow_right: we set HERO_NAME global variable from name variable
 
-<code>pm.globals.set("SPARTAN_NAME", name);</code>
+<code>pm.globals.set("HERO_NAME",name);</code>
 
-![image33](https://user-images.githubusercontent.com/69331074/234323124-df3c6a0f-737c-453e-b6cf-59825669a799.png)
-
-
-![image29](https://user-images.githubusercontent.com/69331074/234323590-14de02b4-2b61-4fb6-a51e-a8ebaf4d6cce.png)
+![image](https://github.com/amirh3sam/Post-Man-Automation/assets/69331074/b81c3309-6c87-467a-87f7-95832f291366)
 
 
-## ** :heavy_check_mark: FLOW :arrow_right: **
+!![image](https://github.com/amirh3sam/Post-Man-Automation/assets/69331074/d7a21876-667c-409d-9fa8-70b6eed5aa3d)
+
+
+
+## ** :heavy_check_mark: Lets Summmery the FLOW :arrow_right: **
 
 :heavy_check_mark: First Pre-Req Scrip
 
@@ -231,42 +232,38 @@ we used the **Pre-Request Script tab** from Postman.
 Then after the request and response are complete, under the Test tab, we read the Global variable HERO_NAME and assign it as an expectedName
 ![image](https://github.com/amirh3sam/Post-Man-Automation/assets/69331074/85e73473-69ba-4a4c-b026-744a91277105)
 
-
-![image2](https://user-images.githubusercontent.com/69331074/234323638-3c937d2b-0965-4500-b928-5a43461bff5c.png)
-
-
-![image30](https://user-images.githubusercontent.com/69331074/234323670-fdd7c3f0-5470-4679-bdcb-ef1c24f5831a.png)
-
-
 ## :heavy_check_mark: RUN Collection
 
-You can run whole collection here also can give schedules run
+![image](https://github.com/amirh3sam/Post-Man-Automation/assets/69331074/70c8d8e7-680d-4931-ae6d-1fbe7f5b0b29)
 
-Or manually run or give number of Iterations → how many time
+
+You can run the whole collection here also give schedules to run
+
+Or manually run or give several Iterations → how many time
 
 You want to run it or delay or if you have external data like
 
-Excel file you can choose Data and click Run spartan
+For Excel files, you can choose Data and click Run ApiServerPractice
 
-See all result details after you run it.
+See all results details after you run it.
 
-##:heavy_check_mark: DDT:
+## :heavy_check_mark: DDT:
 
-SO IN THIS FLOW, WE USED RANDOM VARIABLE WITH SAVING AND REUSING IT.
+SO IN THIS FLOW, WE USED RANDOM VARIABLES WITH SAVING AND REUSING IT.
 
 CAN WE USE POSTMAN AUTOMATION WITH EXTERNAL DATA/FILE
 
 **I want to use my .csv file to automate Spartan Flow**
 
-Make copy of your Spartans folder and name it **Spartan DDT**
+Make a copy of your Hero folder and name it **HERO DDT**
 
-**I have my csv file on my desktop**
+**I have my CSV file on my desktop**
 
-**Need to get the URL from Spartans :**YourIpAddress
+**Need to get the URL from in this case your localhost **YourIpAddress**
 
-**And add it to SpartanDDT**
+**And add it to Hero DDT**
 
-We create one .csv file where we have name, gender and phone fields.
+We create one .csv file where we have name and gender fields.
 
 Then our **POST REQUEST BODY** we use **those field names** with **{{}}**
 <code>
@@ -274,159 +271,58 @@ Then our **POST REQUEST BODY** we use **those field names** with **{{}}**
 
 "gender":"{{gender}}",
 
-"name":"{{name}}",
-
-"phone":{{phone}}
-
+"name":"{{name}}"
 }
 </code>
-**Remove variable name** in **Pre-request** because in this case we do not need it delete everything on the Post → Pre-request
+
+**Remove variable name** in **Pre-request** because in this case, we do not need it to delete everything on the Post → Pre-request
 
 Under **Test** tab **remove** global name
 
-![image15](https://user-images.githubusercontent.com/69331074/234323694-d19e3ce2-cb87-4f21-a401-11a91523ab1b.png)
+<code> var expectName =pm.globals.get("HERO_NAME"); </code>
 
 
 Now need to add expectedName like this:
 
-![image1](https://user-images.githubusercontent.com/69331074/234323723-491d00ed-8217-4a49-9d22-8a49498e1d08.png)
+```javaScript
+//get the name value from CSV file
+var expectName =pm.globals.get("name");
 
+```
 
 You can remove the log part too(print json response and print something on the console)
 
-![image36](https://user-images.githubusercontent.com/69331074/234323742-9f8fef48-1d3f-4a0e-998d-4c1e0f624042.png)
-
+```javaScript
+var jsonData = pm.response.json();
+console.log("Hero name: " +jsonData.data.name);
+```
 
 Keep the ID!
 
-when we execute through Collection Runner, there is an option to pick file, we just need to click select file and pick our .csv file.
+when we execute through Collection Runner, there is an option to pick a file, we just need to click select the file and pick our .csv file.
 
-**And click Run Spartan DDT**
+**And click Run Hero DDT**
 
-if the column names and variable names are matching, postman will provide those information.
+if the column names and variable names match, the postman will provide that information.
 
-To access to same information for each iternation dynamically in the Tests tab, we used following code
+To access to the same information for each iteration dynamically in the Tests tab, we used the following code
 
-<code>var expectedName = pm.iterationData.get("name"); </code> -:arrow_right: this parameter needs to match from csv column name again.
+<code>var expectedName = pm.iterationData.get("name"); </code>  
 
-We want to have **different Enviroment**
-
-Click on right side menu bar on **Enviroments**
-
-**Then click on creat Enviroments**
-
-And name it **QA1**
-
-**Now we have to define different Enviroments start with :**
-
-**--------------------instead XXXXXXXXXX  add your actual informaion in Project------------------**
-
-**baseUrl** type it under VARIABLE and add XXXXXXXXXX under **CURRENT VALUE**
-
-Next **VARIABLE** is **tearcher_email** and the **CURRENT VALUE** is **XXXXXXXXXX**
-
-**teacher_password** is **XXXXXXXXXX**
-
-**If you want to password invisible change type to secret**
-
-**Next**
-
-**leader_email is XXXXXXXXXX and leader_passeword is XXXXXXXXXX**
-
-**Then right click on QA1 and choose Duplicate**
-
-**Change name to QA2**
-
-**Now we change only the values**
-
-**baseUrl** is XXXXXXXXXXX**
-
-**tearcher_email** is **XXXXXXXXXX**
-
-**teacher_password** is **XXXXXXXXXX**
-
-**teader_email** is **XXXXXXXXXX**
-
-**leader_passeword** is **XXXXXXXXXX**
-
-**Creat** new **collection** and called it **ANYNAME** And add **new request**
-
-**Name : GET /leader token**
-
-Next from top right where said no environment pick **QA1 now** when you try do your request after GET type <code>{{baseUrl}}</code> gonna see green that comes from Enviroment QA1
-
-<code>**GET {{baseUrl}}/sign** </code> and add **email** and **password**
-
-**Eamil is <code>{{leader_email}}</code>**
-
-**Password is <code>{{leader_password}</code>}**
-
-![image7](https://user-images.githubusercontent.com/69331074/234323773-e28619b1-7d92-4fa1-a6fa-5dde800549c6.png)
+:arrow_right: this parameter needs to match from CSV column name again.
 
 
-If right now just change the QA1 to QA2 and send it again you gonna get a new token from Enviroment QA2
-
-In **Test** tab want to check **status code** and **get a token** and save as an leader Token env variable.
-
-![image10](https://user-images.githubusercontent.com/69331074/234323797-d86b3f2b-5d7d-401a-b6ce-42ba701e5b04.png)
-
-
-From right side click on status code and click on Respond body : Json value check
-
-Then we delete first line and third line and only keep the
-
-<code>**var jsonData = pm.response.json();**</code>
-
-**And add**
-
-<code>**console.log(jsonData.accessToken);**</code>
-
-**Add this to var → <code>var accessToken = jsonData.accessToken;</code>**
-
-**After we print Token I need to add it in to my Enviroment Variable**
-
-![image22](https://user-images.githubusercontent.com/69331074/234323819-06837e75-7f62-4776-94ae-b95b1e0eb1a2.png)
-
-
-click on Set an envriment variable
-
-So you gonna see this :
-
-<code>**pm.environment.set(“leaderToken”, accessToken);**</code>
-
-After run goona see it on your environment QA1 and QA2
-
-Then right click on Bookit and create another request
-
-<code>**GET → {{baseUrl}}//api/users/me**</code>
-
-**Click on Authorization and Token → type → <code>{{leaderToke}}</code>**
-
-![image20](https://user-images.githubusercontent.com/69331074/234323845-0d14c44d-efa1-4954-9024-447614bddc78.png)
-
-
-##:heavy_check_mark: **DDT** with **schedule** **after click** on **Run collection** from **Spartan collection**
-
-On there
-
-**:heavy_check_mark: Schedule configuration**
-
-give **name** like **SMOKE TEST EVERY DAY** at **8:00AM** and can choose **Environment** like **QA1** and Click **Schudel Run**
-
-![image38](https://user-images.githubusercontent.com/69331074/234323868-2a56c7c8-358a-4803-9bfe-b4536145bce2.png)
-
-
-Another way to run the collection is choose by Automate runs **via CLI**
+Another way to run the collection is to choose by Automate runs **via CLI**
 
 Run on postman CLI need to install :
 
 [https://go.pstmn.io/install-cli-win64](https://go.pstmn.io/install-cli-win64)
 
-then with command line deponds on your operation system and how is work by type code on command line can execute test. Copy past the API key on command line and run!
+then with command line depends on your operation system and how it works Typing code on the command line can execute tests. Copy past the API key on the command line and run!
 
 **Or**
 
-##:heavy_check_mark: **Run on CI/CD pipe line**
+##:heavy_check_mark: **Run on CI/CD pipeline**
 
 **You can pick Jenkins and run it !**
 
@@ -435,28 +331,5 @@ then with command line deponds on your operation system and how is work by type 
 ![image37](https://user-images.githubusercontent.com/69331074/234323956-2396bca1-442e-4595-9728-9c25a432fa62.png)
 
 
-**:heavy_check_mark: Now want to do Schema**
+I hope you guys enjoying this Topic, Good luck!!✌️
 
-<code>**Get {{baseSWAPI}}/api/spartans**</code>
-
-**Test tab type :**
-
-<code>**Var Schema = {add your schema all json objects here};**</code>
-
-![image19](https://user-images.githubusercontent.com/69331074/234323981-8dd9cd77-b6c4-4796-8516-2f80cbcf0445.png)
-
-
-After that type:
-
-<code>**Var response= JSON.parse(responseBody);**</code>
-
-<code>**Tests[“schema is Valid”] = tv4.validate(response,schema);**</code>
-
-<code>**console.log(tv4.error);**</code>
-
-![image14](https://user-images.githubusercontent.com/69331074/234324002-6e6ddbc0-ddcd-4cb0-8814-5fe3a4c6985e.png)
-
-
-**Then Send should get 200 Status code**
-
-If some one ask you how to validate schema you can tell with tv4.validate library .
