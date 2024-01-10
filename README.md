@@ -3,11 +3,11 @@
 
 ##:heavy_check_mark: **PostMan Automation**
 
-In order to set up a free server effortlessly, you can generate the server by executing a few lines of code in the command prompt. To learn how to create your own local server for testing HTTP API requests, visit this GitHub page [CLICK HERE](https://github.com/MRSamBadiei/nodejs-api-server) , which provides instructions on the process. With this server, you can conduct tests involving GET, POST, PUT, PATCH, and DELETE methods on data pertaining to name, gender, and age. Begin by establishing a database on your local host to assess GET and POST operations for data creation. You can also utilize this server to DELETE or UPDATE your database as needed. Once the server is up and running, you can proceed to Postman for automated testing.
+To set up a free server effortlessly, you can generate the server by executing a few lines of code in the command prompt. To learn how to create your local server for testing HTTP API requests, visit this GitHub page [CLICK HERE](https://github.com/MRSamBadiei/nodejs-api-server), which provides instructions on the process. With this server, you can conduct tests involving GET, POST, PUT, PATCH, and DELETE methods on data about name, gender, and age. Begin by establishing a database on your local host to assess GET and POST operations for data creation. You can also utilize this server to DELETE or UPDATE your database as needed. Once the server is up and running, you can proceed to Postman for automated testing.
 
 
 
-after you create the server now we can do some testing and verificaiton on responses :arrow_right: http://localhost:3001
+after you create the server now we can do some testing and verification on responses :arrow_right: http://localhost:3001
 
  ---
 :pushpin: **STEP 1**: 
@@ -15,14 +15,14 @@ Establish a workspace and assign it any name you prefer, such as "MyAutomationAP
  
 :arrow_right: now need to create a Collection and give a name like  APIPractice )
 
-after you click on APIPractice you can see the Tab called "Variavles " and click on it.
+after you click on APIPractice you can see the Tab called "Variables" and click on it.
 
 :pushpin: **STEP 2**: 
 Under **VARIABLE**  column type →  ``` heroUrl ```
 
 Then under **CURRENT VALUE** – > ```http://localhost:3000 ```
 
-**INTIAL VALUE** → is the url that you used to shared it with others
+**INITIAL VALUE** → is the URL that you used to share it with others
 
 see other type of variable : 
 
@@ -43,7 +43,7 @@ see other type of variable :
 our first request: <code> **GET  →** save then run it</code>
 
 :pushpin: **STEP 4**:
-Verfication : Click on **Test** tab → then on the right side you have some methods that you can pick
+Verification: Click on the **Test** tab → then on the right side you have some methods that you can pick
 **Inside Test you need to type JS code**
 
 Click on
@@ -57,9 +57,9 @@ pm.test("Status code is 200", function () {
 });
 ```
 
-**for checking other status code : Just need to change that 200 inside the () to any other status code**
+**For checking other status codes: Just need to change that 200 inside the () to any other status code**
 
-after click on "Send" gonna see under Test Results shows pass
+after clicking on "Send" gonna see under Test Results that shows a pass
 
 ![image](https://github.com/amirh3sam/Post-Man-Automation/assets/69331074/1f21cea7-e898-49b0-8d5b-4c34514e9737)
 
@@ -73,7 +73,7 @@ pm.test("Content-Type is present", function () {
 });
 ```
 
-→ if you want to verify for example Date is present in the header just need to copy and past same code and change instead “Content-type” chenge to “Date” then click Send
+→ if you want to verify for example Date is present in the header just need to copy and paste same code and change instead “Content-type” chenge to “Date” then click Send
 
 ```JavaScript
 pm.test("Date is present", function () {
@@ -81,65 +81,74 @@ pm.test("Date is present", function () {
 });
 ```
 
-#### Is not case sensitive instead Date you can type date
+#### Is not case sensitive instead Date you can type the date
 
-Now want to verify content type is **application/json** now in second line after “Content-Type” add comma and type “applicaiton/json”
+Now want to verify content type is **application/json** now in the second line after “Content-Type” add a comma and type “application/json”
 ![image](https://github.com/amirh3sam/Post-Man-Automation/assets/69331074/08d2f7ae-d1e5-462c-b339-9e34095afac6)
 
 ```JavaScript
-pm.test("Content-Type is applicaiton/json", function () {
+pm.test("Content-Type is application/json", function () {
     pm.response.to.have.header("Content-Type","application/json; charset=utf-8");
 });
 
 ```
 
-Another thing want to check header Transfer-Encdoing is chunked:
+Another thing wants to check header Transfer-Encoding is chunked:
 
 ```JavaScript
-pm.test("Transfer-Encdoing is chunked", function () {
-    pm.response.to.have.header("Transfer-Encdoing","chunked");
+pm.test("Transfer-Encoding is chunked", function () {
+    pm.response.to.have.header("Transfer-Encoding","chunked");
 });
 ```
+
+
+Now you can see we have 5 Tests that all Pass :
+![image](https://github.com/amirh3sam/Post-Man-Automation/assets/69331074/e86465e6-8a32-4970-87e5-37e92b3a3e8a)
+
+
 :pushpin: **STEP 6**:
 For **POST HTTP Request**  : <code> POST: http://localhost:3000/addHero </code>
-Under body Choose jason Then add value then after send  your going to get 201 Status code!
-as you see on this example we add one json file to our database 
+on the body tab Choose Jason Then add value then after sending  you're going to get a 201 Status code!
+as you see in this example we added one json file to our database 
 
 ![image](https://github.com/amirh3sam/Post-Man-Automation/assets/69331074/8979b115-dcf8-4643-b7dc-5521b8b5f35f)
 
 
 
-Now go to **Test** tab
+Now go to the **Test** tab
 
 Check status code
 
-![image](https://github.com/amirh3sam/Post-Man-Automation/assets/69331074/a15d37c1-337b-4586-8500-97316b2d3843)
+![image](https://github.com/amirh3sam/Post-Man-Automation/assets/69331074/c05dd243-b382-42fe-93cf-c6823449955f)
 
-
-Now from right side click on Respond body: Json value check
+Now from the right side click on Respond body: Json value check
 
 ![image](https://github.com/amirh3sam/Post-Man-Automation/assets/69331074/16b8abf1-2925-43b4-a090-ab8644162ee3)
 
 Now need to change in third line **value** to **msg** and **100** to **"Your hero successfully added to the database."**
-![image](https://github.com/amirh3sam/Post-Man-Automation/assets/69331074/16b8abf1-2925-43b4-a090-ab8644162ee3)
+![image](https://github.com/amirh3sam/Post-Man-Automation/assets/69331074/da95b891-5de6-4129-96a5-82c1d8de93d2)
+
 
 ##Create Json object:
 ```javaScript
 var jsonData = pm.response.json();
 ```
-To print name on console:
+To print the name on the console:
 ```javaScript
-console.log("Hero name: " +jsonData.name);
+console.log("Hero name: " +jsonData.data.name);
 ```
-Also age and gender of specefic id :
+Also age and gender of specific ID:
 
 ```javaScript
-console.log("Hero age: " +jsonData.age);
+console.log("Hero age: " +jsonData.data.age);
 ```
 ```javaScript
-console.log("Hero gender: " +jsonData.gender);
+console.log("Hero gender: " +jsonData.data.gender);
 ```
+![image](https://github.com/amirh3sam/Post-Man-Automation/assets/69331074/60840449-e204-4f8e-b7f9-a87927be0753)
 
+on console we are able to see the result :
+![image](https://github.com/amirh3sam/Post-Man-Automation/assets/69331074/c00f68e1-0ceb-44f8-9b3b-459917f54ce7)
 
 :pushpin: **STEP 7**:
 Click on your Collection that allows to use PUT HTTP request right click and create new request :<code> PUT:  http://localhost:3000/heros/:id</code>
