@@ -5,7 +5,7 @@
 
 To set up a free server effortlessly, you can generate the server by executing a few lines of code in the command prompt. To learn how to create your local server for testing HTTP API requests, visit this GitHub page [The GitHub Page](https://github.com/MRSamBadiei) or you can download it here [Download zip file HERE](https://github.com/amirh3sam/Post-Man-Automation/files/13933170/nodejs-api-server_lastUPdate.zip) , after you download the zip file extract it to desktop after open the folder rightclick somewhere and choose open in Terminal then type ```npm i``` Enter Then Type ```npm run dev``` Enter wait to see on Green that Running mean server is ready :) 
 ![image](https://github.com/amirh3sam/Post-Man-Automation/assets/69331074/fc73b8c6-0b5c-4fe3-ac20-f8f131f19057)
-which provides instructions on the process. With this server, you can conduct tests involving GET, POST, PUT, PATCH, and DELETE methods on data about name, gender, and age. Begin by establishing a database on your local host to assess GET and POST operations for data creation. You can also utilize this server to DELETE or UPDATE your database as needed. Once the server is up and running, you can proceed to Postman for automated testing.
+With this server, you can conduct tests involving GET, POST, PUT, PATCH, and DELETE methods on data about name, gender, and age. Begin by establishing a database on your local host to assess GET and POST operations for data creation. You can also utilize this server to DELETE or UPDATE your database as needed. Once the server is up and running, you can proceed to Postman for automated testing.
 
 
 
