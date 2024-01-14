@@ -256,8 +256,6 @@ then with command line depends on your operation system and how it works Typing 
 
 **[https://learning.postman.com/docs/collections/using-newman-cli/integration-with-jenkins/](https://learning.postman.com/docs/collections/using-newman-cli/integration-with-jenkins/)**
 
-![image37](https://user-images.githubusercontent.com/69331074/234323956-2396bca1-442e-4595-9728-9c25a432fa62.png)
-
 
 I hope you guys enjoying this Topic, Good luck!!✌️
 
