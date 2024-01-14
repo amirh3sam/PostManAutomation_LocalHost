@@ -239,6 +239,8 @@ we used the **Pre-Request Script tab** from Postman.
 
 :heavy_check_mark: Set global name
 Then after the request and response are complete, under the Test tab, we read the Global variable HERO_NAME and assign it as an expectedName
+
+
 ![image](https://github.com/amirh3sam/Post-Man-Automation/assets/69331074/85e73473-69ba-4a4c-b026-744a91277105)
 
 
