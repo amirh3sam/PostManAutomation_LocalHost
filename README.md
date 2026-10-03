@@ -1,7 +1,39 @@
+<p align="center">
+  <img src="assets/banner.svg" alt="Postman API Automation. Automate GET, POST, PUT, PATCH and DELETE against a local server, then run it in CI." width="100%">
+</p>
 
-![image](https://github.com/amirh3sam/Post-Man-Automation/assets/69331074/9e109094-70c0-430f-93c7-288187c27cad)
+<p align="center">
+  <img alt="5 HTTP methods" src="https://img.shields.io/badge/methods-5-3fe0c5?style=flat-square&labelColor=0a0e14">
+  <img alt="Runs locally" src="https://img.shields.io/badge/server-localhost-3fe0c5?style=flat-square&labelColor=0a0e14">
+  <img alt="Postman" src="https://img.shields.io/badge/tool-Postman-a98bff?style=flat-square&labelColor=0a0e14">
+  <img alt="Newman" src="https://img.shields.io/badge/CI-Newman-a98bff?style=flat-square&labelColor=0a0e14">
+  <img alt="Beginner friendly" src="https://img.shields.io/badge/level-beginner%20friendly-f5c451?style=flat-square&labelColor=0a0e14">
+  <a href="https://github.com/amirh3sam/PostManAutomation_LocalHost/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/amirh3sam/PostManAutomation_LocalHost?style=flat-square&labelColor=0a0e14&color=f5c451"></a>
+</p>
 
-## :heavy_check_mark: **PostMan Automation**
+<p align="center">
+  <a href="#step-1-start-the-local-api-server"><b>Start the server</b></a> ·
+  <a href="#the-flow-start-to-finish">The flow</a> ·
+  <a href="#run-it-in-a-cicd-pipeline">Run it in CI</a>
+</p>
+
+<p align="center">
+  <img src="https://github.com/amirh3sam/Post-Man-Automation/assets/69331074/9e109094-70c0-430f-93c7-288187c27cad" alt="Postman running API tests against a local server." width="100%">
+</p>
+
+Learning API testing has a chicken-and-egg problem: you need an API to test. Public practice APIs are read-only, so you can send a `GET` and little else. The moment you want to create, update and delete records, you need something you are allowed to change.
+
+This guide gives you that. You run a small API server on your own machine, then use **Postman** to exercise all five methods against it: `GET`, `POST`, `PUT`, `PATCH` and `DELETE`, on records with a name, gender and age. Because the data is yours, you can break it freely and start over whenever you like.
+
+- **A real API you control**, running on `localhost`, with no rate limits and no sign-up.
+- **All five methods covered**, including the ones read-only practice APIs never let you reach.
+- **Assertions, not just requests.** Checking the response is what makes it a test.
+- **Then automate it**, running the whole collection from a pipeline with Newman.
+
+> [!NOTE]
+> The local API server comes from a separate project, linked in the first step. This repository is the guide to testing against it.
+
+## Step 1. Start the local API server
 
 To set up a free server effortlessly, you can generate the server by executing a few lines of code in the command prompt. To learn how to create your local server for testing HTTP API requests, visit this GitHub page [The GitHub Page](https://github.com/MRSamBadiei) or you can download it here [Download zip file HERE](https://github.com/amirh3sam/Post-Man-Automation/files/13933170/nodejs-api-server_lastUPdate.zip) , after you download the zip file extract it to desktop after open the folder rightclick somewhere and choose open in Terminal then type ```npm i``` Enter Then Type ```npm run dev``` Enter wait to see on Green that Running mean server is ready :) 
 
@@ -9,14 +41,11 @@ To set up a free server effortlessly, you can generate the server by executing a
 
 With this server, you can conduct tests involving ```GET, POST, PUT, PATCH, and DELETE``` methods on data  ```name, gender, age```. Begin by establishing a database on your local host to assess GET and POST operations for data creation. You can also utilize this server to DELETE or UPDATE your database as needed. Once the server is up and running, you can proceed to Postman for automated testing.
 
-
-
 after you create the server now we can do some testing and verification on responses :arrow_right: http://localhost:3000
 
 if for a reason your 3000 PORT was used by another project, you can easily change that PORT to 3001 or any open port, to do that you need to open the Project and on package.json there is a dev object change that PORT=3001 and save and run again!
 
 ![image](https://github.com/amirh3sam/Post-Man-Automation/assets/69331074/308fedf7-8ea7-4425-bcf3-7f7d7af8b66b)
-
 
  ---
 :pushpin: **STEP 1**: 
@@ -110,10 +139,8 @@ pm.test("Transfer-Encoding is chunked", function () {
 });
 ```
 
-
 Now you can see we have 5 Tests that all Pass :
 ![image](https://github.com/amirh3sam/Post-Man-Automation/assets/69331074/e86465e6-8a32-4970-87e5-37e92b3a3e8a)
-
 
 :pushpin: **STEP 6**:
 For **POST HTTP Request**  : <code> POST: http://localhost:3000/addHero </code>
@@ -121,8 +148,6 @@ on the body tab Choose Jason Then add value then after sending  you're going to 
 as you see in this example we added one json file to our database 
 
 ![image](https://github.com/amirh3sam/Post-Man-Automation/assets/69331074/8979b115-dcf8-4643-b7dc-5521b8b5f35f)
-
-
 
 Now go to the **Test** tab
 
@@ -137,8 +162,7 @@ Now from the right side click on Respond body: Json value check
 Now need to change in third line **value** to **msg** and **100** to **"Your hero successfully added to the database."**
 ![image](https://github.com/amirh3sam/Post-Man-Automation/assets/69331074/da95b891-5de6-4129-96a5-82c1d8de93d2)
 
-
-##Create Json object:
+### Create a JSON object
 ```javaScript
 var jsonData = pm.response.json();
 ```
@@ -184,11 +208,9 @@ Now we go PUT request in Path Param and add id with global value
 
 ![image](https://github.com/amirh3sam/Post-Man-Automation/assets/69331074/19c4de15-adfc-4b2c-960b-d28b4ca223da)
 
-
 and in the Body tab, we can change the age to a different value and save and run;
 
 ![image](https://github.com/amirh3sam/Post-Man-Automation/assets/69331074/1cae6079-f68a-41f9-84db-2cbea599710a)
-
 
 Now want to delete that Global variable that we create with post and edit it with Put:
 ![image](https://github.com/amirh3sam/Post-Man-Automation/assets/69331074/88051914-c36e-4d24-ae00-bc8d4ddc31cc)
@@ -200,7 +222,6 @@ On the Test tab check the status code and error message
 
 ![image](https://github.com/amirh3sam/Post-Man-Automation/assets/69331074/31af0ded-6adc-4e79-a2e4-2b9afc7ea9e7)
 
-
 We are using static **post Hero name** right now. We want to **get dynamic name** to **post** and **verify** that **name is posted.**
 
 In order to **use random** **firstname** in **our post request**, we used <code> **{{$randomFirstName}} </code> in request body**.
@@ -210,7 +231,6 @@ But the **problem** is, that we **cannot verify** after we **post** the name in 
 **To overcome this problem.**
 
 we used the **Pre-Request Script tab** from Postman.
-
 
 **how can we use <code> {{$randomFirstName}} </code>in pre request script ?**
 
@@ -222,12 +242,9 @@ we used the **Pre-Request Script tab** from Postman.
 
 ![image](https://github.com/amirh3sam/Post-Man-Automation/assets/69331074/b81c3309-6c87-467a-87f7-95832f291366)
 
-
 !![image](https://github.com/amirh3sam/Post-Man-Automation/assets/69331074/d7a21876-667c-409d-9fa8-70b6eed5aa3d)
 
-
-
-## ** :heavy_check_mark: Lets Summmery the FLOW :arrow_right: **
+## The flow, start to finish
 
 :heavy_check_mark: First Pre-Req Scrip
 
@@ -240,9 +257,7 @@ we used the **Pre-Request Script tab** from Postman.
 :heavy_check_mark: Set global name
 Then after the request and response are complete, under the Test tab, we read the Global variable HERO_NAME and assign it as an expectedName
 
-
 ![image](https://github.com/amirh3sam/Post-Man-Automation/assets/69331074/85e73473-69ba-4a4c-b026-744a91277105)
-
 
 Run on postman CLI need to install :
 
@@ -252,12 +267,16 @@ then with command line depends on your operation system and how it works Typing 
 
 **Or**
 
-## :heavy_check_mark: Run on CI/CD pipeline
+## Run it in a CI/CD pipeline
 
 **You can pick Jenkins and run it !**
 
 **[https://learning.postman.com/docs/collections/using-newman-cli/integration-with-jenkins/](https://learning.postman.com/docs/collections/using-newman-cli/integration-with-jenkins/)**
 
-
 I hope you guys enjoying this Topic, Good luck!!✌️
 
+## About
+
+Made by **[AmirHesam Tech](https://amirhesamtech.com)**. More tech content on TikTok: [@techwithamirh3sam](https://www.tiktok.com/@techwithamirh3sam).
+
+If this guide saved you some time, please give it a star. It helps other people find it.
